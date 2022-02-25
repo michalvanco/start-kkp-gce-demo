@@ -1,45 +1,42 @@
-apiVersion: operator.kubermatic.io/v1alpha1
-kind: KubermaticConfiguration
+apiVersion: ENC[AES256_GCM,data:wwBHCQPQT902SOm+CSxCToxkBcaEU5Rn7n54aE70Ig==,iv:3n7NWqUYZEw+N89ovOCwXbppdsgGSWRZKZ8h5LsX3PA=,tag:P4VaL5JB2115ff4yUtzmnw==,type:str]
+kind: ENC[AES256_GCM,data:KcTq1YXY3k2NMyS6UuxTVUA+N8LwUbg=,iv:n+Ek7MdYxR7DKoZ58J37FBf/CawTAd3H4nq9f5ABuqY=,tag:koM7OE0XaChwxA2sQG2uqw==,type:str]
 metadata:
-    name: kubermatic
-    namespace: kubermatic
+    name: ENC[AES256_GCM,data:vYNwwaSjsnLBOA==,iv:x0CYcmtpeAbNp5J/pVp0nuDjoylsLSduqAhiZjwHylo=,tag:HuneVxgzQf5ZMT1lmGb3rA==,type:str]
+    namespace: ENC[AES256_GCM,data:X8YAC8jUV2IkKA==,iv:fKfvHIDw1ZQsp9U04sVYx//GFmPHSeZoB3C+BihPqPc=,tag:j/R+D9nahjzoB3svRhhYWQ==,type:str]
 spec:
     ingress:
-        domain: michal-kkp-gce-gh.lab.kubermatic.io
+        domain: ENC[AES256_GCM,data:+lO/PHX9mtPgkSgcOm1HoLNHn1iUd5npzj+iWLv95QdVabk=,iv:60FoybizqLEAFmRjc47O0kCd2ZYnbV/eIv2effMqWnM=,tag:gyr+QSLPfjY13/U3XkisfQ==,type:str]
         certificateIssuer:
             apiGroup: null
-            kind: ClusterIssuer
-            name: letsencrypt-prod
-        className: nginx
+            kind: ENC[AES256_GCM,data:S6ZRmCKxhzXICEzJzA==,iv:cmT9mDlWXTQ9fbGzAexaogzfZZAJMX9IyT6Uaq5/ITM=,tag:nAzCTcD4JnyWhSVcbFK7iQ==,type:str]
+            name: ENC[AES256_GCM,data:Ioktok56kWCQJKVkHwfV5g==,iv:MZHaW+mBodJq6tsNyfBpRvQVyS3e6o4OvMRoVtnUhzA=,tag:PNrwDN/RYkWnm7zIqwXddg==,type:str]
+        className: ENC[AES256_GCM,data:Tlsq6Tw=,iv:RW2oSTC1j9DkzLk10u4U5GzSQGfQHXGxEHPfhQIKDDk=,tag:nhTH0jWdRw38BoUsLR0OGA==,type:str]
     auth:
-        clientID: kubermatic
-        issuerClientID: kubermaticIssuer
-        skipTokenIssuerTLSVerify: true
-        tokenIssuer: https://michal-kkp-gce-gh.lab.kubermatic.io/dex
-        issuerClientSecret: ENC[AES256_GCM,data:BStu03KCzH/CmfeaJEKIva27uaTp1g3I7UAftVsAyMc=,iv:DY+ewEDyk1VzIVFGkARt8DQSb9uDo6Tfdxgjqt//7qc=,tag:ecXfNR68RQMlFPtQdw2SEg==,type:str]
-        issuerCookieKey: ENC[AES256_GCM,data:X3JkZLsRGaaZkiPKInwnQeLokneYYf4yQluZEsfZfu4=,iv:MzLQK5eyzFQo9fgd9w7AfweMOV4+w4RP2Dz0kFl/KEE=,tag:RM2XVtzpsF7dGIroR3OK/A==,type:str]
-        serviceAccountKey: ENC[AES256_GCM,data:AYvghqnafVRdUtGkj0VcQ3K/oNpUkmUubU8i7wMMDrU=,iv:lwj8Bgrgu0Oo06XsFyAncfTV1k8+QqMT4vHRZNGkj9k=,tag:is06HnsFVh8jtdgRVs4lZw==,type:str]
-        issuerRedirectURL: https://michal-kkp-gce-gh.lab.kubermatic.io/api/v1/kubeconfig
+        clientID: ENC[AES256_GCM,data:D+wUBx31khPRkA==,iv:U4P7qcU3qiHXqYobvkWPL4pLKsRKdtqPklnupdWlEEg=,tag:cnOcDx2t393/NRKY6kBO7w==,type:str]
+        issuerClientID: ENC[AES256_GCM,data:pl0adV5snzA8TqbGA9yzmw==,iv:gv2671YeolpGWVHkaOWkBQVZNkQvyScq0rEZI12Sf1U=,tag:G/npJoz5Q+Y5q9nJkofgkw==,type:str]
+        skipTokenIssuerTLSVerify: ENC[AES256_GCM,data:TOUwqg==,iv:VLtSJx2hqnfHF2oqovjdA+xt3fU4jIV1PH2gxKgLT5o=,tag:BkzAudbAXciWM6AqyilKeg==,type:bool]
+        tokenIssuer: ENC[AES256_GCM,data:0tgnEd9xBGZl+Lkx+c/mZ0OmQk/a+It0ZeITgSdYLCIGBVgcpjLPglYQGUZK4rQ=,iv:mfSGqqSHlawrfly3bTb6ZGLr7l3NLdBWqgz6rk+Ezqw=,tag:yR/slQIYdNxztHMNlpk22Q==,type:str]
+        issuerClientSecret: ENC[AES256_GCM,data:tdJcrwolPouLvmg5bbLVDby3Ik9W4vKemWPLvjhtzDs=,iv:MuJUDR0jq6/p56lEb/91eiWl6fUnROWxFs0iehunq9o=,tag:bIqNcpAgA706Px4U8v6YJw==,type:str]
+        issuerCookieKey: ENC[AES256_GCM,data:aHXQGAoYkg4Y47HV8fVocb4iaa56RMsgV3FNjNXk+S4=,iv:+DtxyhsDGJGKJeUOyi4uhrXYKhPPMnMIu+2VsUFlEhg=,tag:A9BJERd5u7uUrcE/QLIZkQ==,type:str]
+        serviceAccountKey: ENC[AES256_GCM,data:w7mIyLEiJdW4o2uuVWq20U7dJ+1S3/NfuXJDEqJlaj8=,iv:mRUUNzRPnhwyymW7vBHLMTAu+SmHW405Lr73Q3NH2g0=,tag:bq/dyzIxxkOl6W0WV8B1cw==,type:str]
+        issuerRedirectURL: ENC[AES256_GCM,data:Eqm7Xm7A/aK3MIL+xM7qrKx1pzMHgwVS2GQnXcNFAoPDN0ZUQZBetMVxe2WUeL6oya71kKX9Ok4vreZXFw==,iv:rhGlNJTxpKprxS22Jz9dvxnYZ442Gu+eCDBb5Ptr6yo=,tag:SCCo530UbLnSXwdCP2erXA==,type:str]
     featureGates:
-        # exposes an HTTP endpoint for generating kubeconfig
-        # for a cluster that will contain OIDC tokens
+        #ENC[AES256_GCM,data:mhrmQ4XkoDR8XDRzczLw1gX7Bb+cVqT57qRc57wtD8DrW3ofTOmmObPLiRaFyiIwhta0,iv:rHWjgwCyTmUH9Rkk/cvz51JHihO0xoSnQk5e0moGLO0=,tag:z6M8AVV4GXgg7Pt5SPI2kA==,type:comment]
+        #ENC[AES256_GCM,data:lEQWfhW3aoCRpHjb/q2LVQxe3ZNIeTtsXlUJn38QI2h7FmxL7yPWOpbTNbs=,iv:lp5JxpDSO1x9NX/wE78DxKrsYtL9Trq9HT/KebDkkSM=,tag:A+ZL07A8hfa16x/oVOw7rw==,type:comment]
         OIDCKubeCfgEndpoint:
-            enabled: false
-        # configures the flags on the API server to use
-        # OAuth2 identity providers
+            enabled: ENC[AES256_GCM,data:FVnk4PE=,iv:UYv4qzwVloYg2JVlVYGAduMpOIvX6pG23ubPwlVl0Vs=,tag:AyuUFE1BIXApTie5w4PY/A==,type:bool]
+        #ENC[AES256_GCM,data:8rWliLKekfMLedB2vmHj229KZNtwcoHXFlZ873L0X30DQruWI4hbCRivnI6BQw==,iv:yZLIc/mOlRX1v6XX0JjnLP26CQP4ibwtXKXcjwUGYrc=,tag:P5+ifZQd4er2fGVCv1zyAQ==,type:comment]
+        #ENC[AES256_GCM,data:prry2VV/HT8j9dw/XbiU2kg//pJFruYp5rw=,iv:f7eueg991OFGqGDAENi8+rAU3KnXtsBc8TXrj+GXDf4=,tag:aPSFrRYk25VL1gYoX37prQ==,type:comment]
         OpenIDAuthPlugin:
-            enabled: false
+            enabled: ENC[AES256_GCM,data:4KYRoo0=,iv:goMCYBa5plUd+fAHi5XEXdEZzj3W4pswloIyWyGkwdY=,tag:qltT/3ujDUPWdhgBVgzqWg==,type:bool]
     ui:
-        # enable shared kubeconfig feature in the dashboard
-        config: |-
-            {
-              "share_kubeconfig": false
-            }
-    # disable default ETCD backups for user clusters (this is old way of configuring backup controllers up to 2.18)
-    # with 2.19+ new controllers for backups are not activated until backup destinations are defined on Seed resource
+        #ENC[AES256_GCM,data:C3KBRkBf17dHfX7Mzakn58W9CERHOUA26JPNDG1BFjsgo76I4i1XiaDvTqXUqV+MxvI=,iv:gfgXp7PBdoSmL274qDTl5xKfb4VYiUm7YOn4SOOGzr0=,tag:hRWX8awFHB0H60nllHga2g==,type:comment]
+        config: ENC[AES256_GCM,data:1Sf/jJrZ3sgBtafdutuivyffNWDD8e4p71TxLD6lmw==,iv:w2ojd1HaZplX3EuopyAxDQSXWuDP+YIE+xkle8kOSLw=,tag:0vqsf2ptTEJ1PMA3Pqretw==,type:str]
+    #ENC[AES256_GCM,data:POIJGwPFYXYWvV4gdqMG8cBhDkCnjER6vVGGWXCKLM/PeHP9CImp/GYz5ph3jafhp7RO94TCyWQTJnH42Wlx6Zaegn0AODXowHMxgDtYoh7d2v3pNCRWkfdjL5k4p7jVfwOwNQewaeZpSjR2JhI=,iv:TndZlraHsEt7lgu/bd20S2j95WuBqS9BDXs9EHQWMhs=,tag:iervblPIBY7lx4ZI/qfL9A==,type:comment]
+    #ENC[AES256_GCM,data:XMFn3/pCQlQr2myf40vEj2PTWn5Vl+tqvyipyRhsHDG5SozA5amJ4zC0o0uSg96eUsZqh2gu69QfX9Q+imkSNuDmw24MhmR9jCVf0Nj5Ncir4xLfq58lW7ZTycR9Bp0nFX5mS81qA0RZylb+zj/xBQ==,iv:pNsCngvHbQ6e1iOV8rtKQRmUpfLaGS7JUhjhh8RCvZM=,tag:clSIOk9Jd9+WWgfwi4Q1kw==,type:comment]
     seedController:
         backupRestore:
-            enabled: false
+            enabled: ENC[AES256_GCM,data:4R9om+k=,iv:fxoHm9QqgF4vrqmrwdMy0sR9ZoB3oVtyPml5EcU4uxg=,tag:sjOjXQYVo9aW0rH+dzEqbw==,type:bool]
 sops:
     kms: []
     gcp_kms: []
@@ -49,14 +46,14 @@ sops:
         - recipient: age1lf2ddxlw3tx2598heceqdgnkn9zdnfeuxj57gpmqzaj67wpndg9qqle3d8
           enc: |
             -----BEGIN AGE ENCRYPTED FILE-----
-            YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSBHSzQvTWVQRm0rUkpMd2ZY
-            dGg2MXRWQnRkM1JPOVE0NU1NZWRPQ0FMczA0CkhkWjBFb3Y0QzdvZUZjVHhjd3oy
-            UWVTMHRKZk1BdGI1YVdFWmRET013OEkKLS0tIEUzQ0g5bU9yaEZFY0dCbEFydGVj
-            U2Yxdk1MajFHS1Z0Q3RzdzZNdHYwb2cKq53ZF7ILXRC+JZdxjgg0y7fJ3fL3OLMi
-            3YVml9+wNTwd6XAowh5Fv3iwkrwM2TTxf7Z6PH0AzoyPtfyZk/wwqw==
+            YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSBJWGdSN2JKWnQ0Q21kdWNR
+            STdtemV4RGVkVm45VkxHcncxWnpLTDlCakEwCkhKTlBlNktkYnhQekFlOUxZU3Nh
+            SmF3aHYyVGxXaDdrV3hCNmRiMUdEdmcKLS0tIHM5M1RZUjhrSjgvVm9ITmFlOFoz
+            YVlwK3pBM0JUOHlrV2lCTjhSK2ppdUUKyfYXAqmO2Wf/SoUnz58NFRBGxrisEQWx
+            qXWakp8He1qZVFH+JqiWs4GdJWAjFGasY6fs0S2bwVIx3UWqYvMYYg==
             -----END AGE ENCRYPTED FILE-----
-    lastmodified: "2022-02-23T11:42:13Z"
-    mac: ENC[AES256_GCM,data:Fc4nHuwxiVOF3qEnZ0yDou5ZNoDjB0X+bqT9vi2KbOhq4z4+5I2MiZKhpygVLocQmUngTxtEC4G5O6qYj9NXEX2s5I9UM6GAobnRElw2kt2d6NBkHt/FFyo9caI82HAiSbOOUC6WkTkCTW8hHDaUAF4+n7iFnrPhQv3Xovk6cOg=,iv:LkBYnPWm7Sm6vnRjKdTdtRPsQ+S6o3euxe9fGOeCD3I=,tag:EvYxngkaVJ/gWwznzrijsg==,type:str]
+    lastmodified: "2022-02-25T13:56:33Z"
+    mac: ENC[AES256_GCM,data:X0TyGH+X9Tk37EzSHjvSRpbcJt2nWln9Umj6uIKbNXO+Fj0s3Q+5mu7w/BNY9qnJSvXEhjMWAdt9chP1SCRZjN7GNJp0tbPAWvbjHatzG9Pc5W1Z/WB0AxkVM1p2A4WdpdNCo6J3R2y7Kr42PKX4PJYMBfFwEeveLFyhYWcrH/4=,iv:BCQadzuTkerVwim6Z5eEMoolG16/g+XGDZFaIaB9KII=,tag:bSv0jmajFAyoCY0rB0bf5w==,type:str]
     pgp: []
-    encrypted_regex: (issuerClientSecret|issuerCookieKey|serviceAccountKey)
+    unencrypted_suffix: _unencrypted
     version: 3.7.1
