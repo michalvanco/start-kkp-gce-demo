@@ -3,7 +3,7 @@ kubermaticOperator:
         tag: v2.19.0
 dex:
     ingress:
-        host: michal-kkp-gce-gh.lab.kubermatic.com
+        host: michal-kkp-gce-gh.lab.kubermatic.io
     certIssuer:
         name: letsencrypt-prod
         kind: ClusterIssuer
@@ -20,35 +20,35 @@ dex:
           name: Kubermatic
           secret: ENC[AES256_GCM,data:br87F4RYeKIl1yv2Ps3wqLIbyJmoLlm9d1RkAf8ur5k=,iv:055zfHCwojkEXCEJuKhAS89sjQ+3NJPfNfXd+xEKPv4=,tag:1XR0fjlPsdSRn84e5KRu9Q==,type:str]
           RedirectURIs:
-            - https://michal-kkp-gce-gh.lab.kubermatic.com
-            - https://michal-kkp-gce-gh.lab.kubermatic.com/projects
+            - https://michal-kkp-gce-gh.lab.kubermatic.io
+            - https://michal-kkp-gce-gh.lab.kubermatic.io/projects
         - id: kubermaticIssuer
           name: Kubermatic OIDC Issuer
           secret: ENC[AES256_GCM,data:joqUDflowVug5APH2ayhyg==,iv:V2IvcrHM0owNUkBkkEGhGOygbPyjjVTtD08DyGzFQKQ=,tag:F8/jwVKE4gUUgY3SNbqHMA==,type:str]
           RedirectURIs:
-            - https://michal-kkp-gce-gh.lab.kubermatic.com/api/v1/kubeconfig
+            - https://michal-kkp-gce-gh.lab.kubermatic.io/api/v1/kubeconfig
         - id: prometheus
           name: Prometheus
           secret: ENC[AES256_GCM,data:leVAFyP58gQKufFnQUlFNA==,iv:jdJrnvXaB7mohmm/Z+iMDNSMGvtikbaU3Oh3F6lbLLs=,tag:jPTFOnl++QrcNtV0CWrFWw==,type:str]
           RedirectURIs:
-            - https://prometheus.michal-kkp-gce-gh.lab.kubermatic.com/oauth/callback
+            - https://prometheus.michal-kkp-gce-gh.lab.kubermatic.io/oauth/callback
         - id: alertmanager
           name: Alertmanager
           secret: ENC[AES256_GCM,data:wpUYCxEWL88dc2mkjxEBLg==,iv:4CxmUymuI5cUIVUGLx1nBVEtFoRmHPimOKtLLfIfT2Y=,tag:ojU/9SWkrU3/6WTPdRWKdA==,type:str]
           RedirectURIs:
-            - https://alertmanager.michal-kkp-gce-gh.lab.kubermatic.com/oauth/callback
+            - https://alertmanager.michal-kkp-gce-gh.lab.kubermatic.io/oauth/callback
         - id: grafana
           name: Grafana
           secret: ENC[AES256_GCM,data:8I0WcCag6h0tqMhuAE9kbw==,iv:/NtdqaxsTSM1pxRkSsfRTs592J9/wOMdFFwg4cwrDqc=,tag:pymXM79LVu5nccAA3Sy3kA==,type:str]
           RedirectURIs:
-            - https://grafana.michal-kkp-gce-gh.lab.kubermatic.com/oauth/callback
+            - https://grafana.michal-kkp-gce-gh.lab.kubermatic.io/oauth/callback
         - id: karma
           name: Karma
           secret: ENC[AES256_GCM,data:WmRoeAKj2dvzjcOYid3AEQ==,iv:KAFaFsZxvnZqCEZuGrQPZ72mAivOt9qRaTFIUi9VUq8=,tag:cyOTi1XhLB3flg677ZR85w==,type:str]
           RedirectURIs:
-            - https://karma.michal-kkp-gce-gh.lab.kubermatic.com/oauth/callback
+            - https://karma.michal-kkp-gce-gh.lab.kubermatic.io/oauth/callback
 alertmanager:
-    host: alertmanager.michal-kkp-gce-gh.lab.kubermatic.com
+    host: alertmanager.michal-kkp-gce-gh.lab.kubermatic.io
 grafana:
     user: admin
     password: ENC[AES256_GCM,data:GQ5ejggQ3gE/vpEZjsLgyw==,iv:sE3hG2AY0REA1/9QDGIXtt+zohi1QAKOSPizffOJEnc=,tag:FjEVBCVyU91cK7Mzk4m38g==,type:str]
@@ -56,12 +56,12 @@ grafana:
         configuration:
             auto_assign_org_role: Editor
             disable_login_form: false
-            root_url: https://grafana.michal-kkp-gce-gh.lab.kubermatic.com
+            root_url: https://grafana.michal-kkp-gce-gh.lab.kubermatic.io
         datasources:
             lokiServices:
                 - loki
 prometheus:
-    host: prometheus.michal-kkp-gce-gh.lab.kubermatic.com
+    host: prometheus.michal-kkp-gce-gh.lab.kubermatic.io
     storageSize: 125Gi
     tsdb:
         retentionTime: 7d
@@ -70,12 +70,12 @@ prometheus:
         - /etc/prometheus/rules/kubermatic-*.yaml
         - /etc/prometheus/rules/managed-*.yaml
 iap:
-    oidc_issuer_url: https://michal-kkp-gce-gh.lab.kubermatic.com/dex
+    oidc_issuer_url: https://michal-kkp-gce-gh.lab.kubermatic.io/dex
     deployments:
         prometheus:
             name: prometheus
             ingress:
-                host: prometheus.michal-kkp-gce-gh.lab.kubermatic.com
+                host: prometheus.michal-kkp-gce-gh.lab.kubermatic.io
             upstream_service: prometheus.monitoring.svc.cluster.local
             upstream_port: 9090
             client_id: prometheus
@@ -91,7 +91,7 @@ iap:
         alertmanager:
             name: alertmanager
             ingress:
-                host: alertmanager.michal-kkp-gce-gh.lab.kubermatic.com
+                host: alertmanager.michal-kkp-gce-gh.lab.kubermatic.io
             upstream_service: alertmanager.monitoring.svc.cluster.local
             upstream_port: 9093
             client_id: alertmanager
@@ -107,7 +107,7 @@ iap:
         grafana:
             name: grafana
             ingress:
-                host: grafana.michal-kkp-gce-gh.lab.kubermatic.com
+                host: grafana.michal-kkp-gce-gh.lab.kubermatic.io
             upstream_service: grafana.monitoring.svc.cluster.local
             upstream_port: 3000
             client_id: grafana
@@ -123,7 +123,7 @@ iap:
         karma:
             name: karma
             ingress:
-                host: karma.michal-kkp-gce-gh.lab.kubermatic.com
+                host: karma.michal-kkp-gce-gh.lab.kubermatic.io
             upstream_service: karma.monitoring.svc.cluster.local
             upstream_port: 8080
             client_id: karma

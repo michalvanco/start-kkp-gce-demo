@@ -5,7 +5,7 @@ metadata:
     namespace: kubermatic
 spec:
     ingress:
-        domain: michal-kkp-gce-gh.lab.kubermatic.com
+        domain: michal-kkp-gce-gh.lab.kubermatic.io
         certificateIssuer:
             apiGroup: null
             kind: ClusterIssuer
@@ -15,11 +15,11 @@ spec:
         clientID: kubermatic
         issuerClientID: kubermaticIssuer
         skipTokenIssuerTLSVerify: true
-        tokenIssuer: https://michal-kkp-gce-gh.lab.kubermatic.com/dex
+        tokenIssuer: https://michal-kkp-gce-gh.lab.kubermatic.io/dex
         issuerClientSecret: ENC[AES256_GCM,data:BStu03KCzH/CmfeaJEKIva27uaTp1g3I7UAftVsAyMc=,iv:DY+ewEDyk1VzIVFGkARt8DQSb9uDo6Tfdxgjqt//7qc=,tag:ecXfNR68RQMlFPtQdw2SEg==,type:str]
         issuerCookieKey: ENC[AES256_GCM,data:X3JkZLsRGaaZkiPKInwnQeLokneYYf4yQluZEsfZfu4=,iv:MzLQK5eyzFQo9fgd9w7AfweMOV4+w4RP2Dz0kFl/KEE=,tag:RM2XVtzpsF7dGIroR3OK/A==,type:str]
         serviceAccountKey: ENC[AES256_GCM,data:AYvghqnafVRdUtGkj0VcQ3K/oNpUkmUubU8i7wMMDrU=,iv:lwj8Bgrgu0Oo06XsFyAncfTV1k8+QqMT4vHRZNGkj9k=,tag:is06HnsFVh8jtdgRVs4lZw==,type:str]
-        issuerRedirectURL: https://michal-kkp-gce-gh.lab.kubermatic.com/api/v1/kubeconfig
+        issuerRedirectURL: https://michal-kkp-gce-gh.lab.kubermatic.io/api/v1/kubeconfig
     featureGates:
         # exposes an HTTP endpoint for generating kubeconfig
         # for a cluster that will contain OIDC tokens
