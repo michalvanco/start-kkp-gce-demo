@@ -1,0 +1,21 @@
+apiVersion: kubermatic.k8s.io/v1
+kind: Seed
+metadata:
+  name: kubermatic
+  namespace: kubermatic
+spec:
+  country: DE
+  datacenters:
+    gce-dmo:
+      country: "DE"
+      location: "DE"
+      spec:
+        gcp:
+          region: "europe-west3"
+          zone_suffixes:
+            - a
+            - b
+            - c
+  kubeconfig:
+    name: kubeconfig-cluster
+    namespace: kubermatic
