@@ -1,143 +1,143 @@
 kubermaticOperator:
     image:
-        tag: v2.19.0
+        tag: ENC[AES256_GCM,data:HzQrZ6wQLA==,iv:I3g76aYymBXo7RIjknDmSN6me5uEB4v9Jh3KygHD3Ds=,tag:FWqT3jHPhQHDcPPLGprsLA==,type:str]
 dex:
     ingress:
-        host: michal-kkp-gce-gh.lab.kubermatic.io
+        host: ENC[AES256_GCM,data:sYQO9X44LtxD8lki++5z/uUSMviXMyoofXiBXnhqffyybhA=,iv:2kKJbhudlLt2Nvldm7Luw2AOcK98xHyWa0cG5ruzlz4=,tag:L9n2hLEom1m2NBggkXy0LA==,type:str]
     certIssuer:
-        name: letsencrypt-prod
-        kind: ClusterIssuer
+        name: ENC[AES256_GCM,data:YmuhhRTwTqKKdgUdJoDLfA==,iv:SIpi7thrLWbFXmII87fw7ZGoZWb7Sg9lA4V8x8gjWt4=,tag:7b23qqYRLq45v6HZrfISDQ==,type:str]
+        kind: ENC[AES256_GCM,data:NhKujEmHH1h+3s73Og==,iv:pttMAP0gRGfOvxJsmp3Kr1Iridx/mBidX3/sbpvZM74=,tag:sB+1hIkK1STZklrowLnbBA==,type:str]
     env:
-        - name: KUBERNETES_POD_NAMESPACE
-          value: oauth
+        - name: ENC[AES256_GCM,data:GxGZOxB1fWBNf6ri0mdIWY762fTonhAy,iv:/N1Vgsh4aHLXm6AQ/6I8MXKY8Zj6ovomP/LPK1jgq40=,tag:EgMoZA1duGtd4pioVnn0IQ==,type:str]
+          value: ENC[AES256_GCM,data:wh7GEho=,iv:Baq5bMNitMAuk1vRw3Igff5RHuGSMTNTaAdDOQ9COow=,tag:VjO/jUCmC+bjfxJ0/4QckA==,type:str]
     staticPasswords:
-        - email: michal@kubermatic.com
-          hash: ENC[AES256_GCM,data:rTKmFD+v4GKgp1rfA71aH6KK7iXPNaeqMIho3zlsNb/4JUFtxScbQbVgPRA+CiCa8JhSTynrff+Zm849,iv:8FGvrKDVPpTHkyvXasJYQ+pke3guSzH5899Rs6ssVqQ=,tag:R6wqBB0iNY3VUG26t8rkng==,type:str]
-          username: michal@kubermatic.com
-          userID: 33b2f203-1bf2-4559-9cba-ed76dab5afb6
+        - email: ENC[AES256_GCM,data:Np5MMAsNcKSzA7+6M+J8t6ZiuvRC,iv:HLt+4f/vhfeZ4ZKCbEDsczDTcdhxGzFIO+x5gR91gXE=,tag:em0lJ1jRHnie9GgwtvKEeQ==,type:str]
+          hash: ENC[AES256_GCM,data:djVEYMSnwSwMbL4srrIbvADUeZiNGZnABiVmIVsT7Ma4hCjXFi5stakRIkhRoC7Nxp7Oq0ibBXT8JR6s,iv:8To7WoT9XM1nhISBRszBvrktkkywvJz/n2MgFGSdnVM=,tag:tqJYxJt8aL3tTmuErjIBKw==,type:str]
+          username: ENC[AES256_GCM,data:BcALV7H2Uf0Tlqnx+W7cNsNMRVS1,iv:Aa+ty/wNndtp6AU4HA4BDD9/Jf0fBc5MxSi/p/0Fi/A=,tag:MsZRqD29eCS5tSXXK3BLsA==,type:str]
+          userID: ENC[AES256_GCM,data:wVoFbvnjkQYCELaaNCmMzt9ECMy6C/hW4j6ZNUGMAUjdYQjq,iv:KjJMz8DiM+l8Tf/aEzpw25dBpomHkhLO5neOLH9+Mx4=,tag:uxXFXnKb5qBJt2PHA82pfg==,type:str]
     clients:
-        - id: kubermatic
-          name: Kubermatic
-          secret: ENC[AES256_GCM,data:br87F4RYeKIl1yv2Ps3wqLIbyJmoLlm9d1RkAf8ur5k=,iv:055zfHCwojkEXCEJuKhAS89sjQ+3NJPfNfXd+xEKPv4=,tag:1XR0fjlPsdSRn84e5KRu9Q==,type:str]
+        - id: ENC[AES256_GCM,data:LuMzaa/qk0/LJg==,iv:0tYWJuOSihVgqVwjemBzyiFPfs23f6qNnnzGRCYD4Ps=,tag:a+ybE6NNTfdv5Jnx0Gqs/w==,type:str]
+          name: ENC[AES256_GCM,data:gqZRFKwWBrXfAg==,iv:uxxv9jtb9h62UJaNPbHXgjGjgS418dKwY3Y2eBXnvUU=,tag:lIvTXO/Kmzf5gwvQgCS8LA==,type:str]
+          secret: ENC[AES256_GCM,data:58YeRV7M9gnJjIJTSQve/twLTeHDt6YYfZTShB+z+EQ=,iv:KDZG5O9OQbtcpaoRdRjfaYWNi6gPtOerP14AOVuYdl4=,tag:YKcdRAr8xcV75h2zs3Wsew==,type:str]
           RedirectURIs:
-            - https://michal-kkp-gce-gh.lab.kubermatic.io
-            - https://michal-kkp-gce-gh.lab.kubermatic.io/projects
-        - id: kubermaticIssuer
-          name: Kubermatic OIDC Issuer
-          secret: ENC[AES256_GCM,data:joqUDflowVug5APH2ayhyg==,iv:V2IvcrHM0owNUkBkkEGhGOygbPyjjVTtD08DyGzFQKQ=,tag:F8/jwVKE4gUUgY3SNbqHMA==,type:str]
+            - ENC[AES256_GCM,data:/yJRTgxEYY4j6njhbRql7h4IksMA7QZEbxczp16oasQSfoeNp+aMpvX4Ew==,iv:XJ6y8ZJJFR8oorqa1D7GkUTFSLNYrWlXpkcCopLn2NA=,tag:bq6XVG2ehur0XoAY9rlhcg==,type:str]
+            - ENC[AES256_GCM,data:wptb2skjzxMHMdkkVU/t+UE1jzFw5U5CjObBsZKiKXV0dw7sjGjmlMmUj1R8djNAcfPwmA==,iv:qNDxRECeOSLd0jTyVEH5XL5ZY5i4Uzw+WmYyK+VmpEM=,tag:S6borXTEYc0rL1/7QzjrJQ==,type:str]
+        - id: ENC[AES256_GCM,data:l4a9T9UrvteD5xEkphPe/g==,iv:XOUk4smJbBt23zFC/YG4FvgvL/HHPi7GleFVjGK9qhs=,tag:v6wjSvtzexfHNZeT7vW/mg==,type:str]
+          name: ENC[AES256_GCM,data:2g8miKltMrvKynaRnb6cm0ndeyfZOg==,iv:uynRk1tSV0GgNO/nnK4PQ/2dIbVfUHhW480IwzCcZlw=,tag:htlwAvH71bDyHLJrhKziaw==,type:str]
+          secret: ENC[AES256_GCM,data:npx1b3rOv7w8QfbzVuXOsw==,iv:n+7zzwhsD4xneyuwIcEr9SH1eIrR4D0/apbCXFCNhWM=,tag:DyDROav7KER0rp1lBwzmow==,type:str]
           RedirectURIs:
-            - https://michal-kkp-gce-gh.lab.kubermatic.io/api/v1/kubeconfig
-        - id: prometheus
-          name: Prometheus
-          secret: ENC[AES256_GCM,data:leVAFyP58gQKufFnQUlFNA==,iv:jdJrnvXaB7mohmm/Z+iMDNSMGvtikbaU3Oh3F6lbLLs=,tag:jPTFOnl++QrcNtV0CWrFWw==,type:str]
+            - ENC[AES256_GCM,data:RUinsWp7KiVA3A9Pjt7Gi5KVIoOZoqlve16re6ZTw4C7GYAfYK7YsC+ZCnOIv9E2NPgEZG8uRAUglL608A==,iv:SfXiLd6SZcZ9yc00O68nOblOu6U5OpyclOR0HKUbokI=,tag:PYD5+J8cWJF+PV6m+JAggQ==,type:str]
+        - id: ENC[AES256_GCM,data:pCM3uC6k7d8UgA==,iv:m/6MBWvDGSjZmoz2ORY9/6PTS9tBda6AXA8ILKD7Pz0=,tag:c8xQ/w9XL5DqopuC9momtA==,type:str]
+          name: ENC[AES256_GCM,data:vHIvZ40Ds64xnw==,iv:5nwomuOmX87NReTQK+m9DmWTLnriBAhDTBs1TNh3B2k=,tag:XAqz6wQgwP9rpDWu3cc4JQ==,type:str]
+          secret: ENC[AES256_GCM,data:mKkwXtMiz7KbIuFvp2Oz+Q==,iv:7Su2IgP56B20ubwyyeb9ZyIy6Hzi4JKdh3ThK//O4NI=,tag:64nBbTYJeXTW9hBZDaXAAg==,type:str]
           RedirectURIs:
-            - https://prometheus.michal-kkp-gce-gh.lab.kubermatic.io/oauth/callback
-        - id: alertmanager
-          name: Alertmanager
-          secret: ENC[AES256_GCM,data:wpUYCxEWL88dc2mkjxEBLg==,iv:4CxmUymuI5cUIVUGLx1nBVEtFoRmHPimOKtLLfIfT2Y=,tag:ojU/9SWkrU3/6WTPdRWKdA==,type:str]
+            - ENC[AES256_GCM,data:vPnhB1eJUUFfEiIKt8c9AszV6S1WxdKewBg0XvQ4vxn/oda/ByFadx/vyOBOVBit75A3Agr5Py8STT13alXQYfPhmEXK,iv:ndTIAxlG3+xx9ZM+RJt3TNAz1/3GppjvuUc/OpkCEmA=,tag:wELT8oQ6ttun1Bh1mwGBpw==,type:str]
+        - id: ENC[AES256_GCM,data:W/cQoP2Ofxg7e2+6,iv:u4MZxFoPMheBkoLgMtgcbt9h8PNnric6KCZLszE83BI=,tag:XBdtO5euSDqofWvi8KRsUQ==,type:str]
+          name: ENC[AES256_GCM,data:cpElLb/1gEZUheV7,iv:yaTYJu/YWUbwg/IVMKsLkzB5DlcDg034uL1IPAxcZEM=,tag:I4LTP27tvxuv9/yen9pxWA==,type:str]
+          secret: ENC[AES256_GCM,data:SaVbdolK86RwMnTlc7zVOg==,iv:JpuQwFUfD15ssuP4om4/+9cms1fo/MW6dggAwbYvWw0=,tag:Iasb++X7UALG7DVUxNipww==,type:str]
           RedirectURIs:
-            - https://alertmanager.michal-kkp-gce-gh.lab.kubermatic.io/oauth/callback
-        - id: grafana
-          name: Grafana
-          secret: ENC[AES256_GCM,data:8I0WcCag6h0tqMhuAE9kbw==,iv:/NtdqaxsTSM1pxRkSsfRTs592J9/wOMdFFwg4cwrDqc=,tag:pymXM79LVu5nccAA3Sy3kA==,type:str]
+            - ENC[AES256_GCM,data:e+b3F22Cvdz3R3IV+agtkpyOrJ78LOv52qX/MGG4IO86DFFb8TtxZGYZgKn/DRglLCIpmmfBqEpHOjBzBupGeJbzOGxWerc=,iv:5zwMyJpaDCchl9b4lPX7f9DqNtyxIjGQf1jks02zV6M=,tag:cl1TsBxIB91QStPtfF+8MA==,type:str]
+        - id: ENC[AES256_GCM,data:YVJ18fD+GA==,iv:bs+XKatvpk1bexwUgDeFrkOq/pA9N9N3Ws9vYdB5hzQ=,tag:nDLT0Rfy6kSWsrzJ27CRDQ==,type:str]
+          name: ENC[AES256_GCM,data:vimRVpNWbA==,iv:6HxOWfhLVUV3mzbkmU20uS/SvsflormEG1HWdyGns9g=,tag:d1MDtA8Ca+8Be57Beoctng==,type:str]
+          secret: ENC[AES256_GCM,data:LvxBgp8PO9nAG/NcJ55ZLg==,iv:cdCTcNZIEncQFPP0uX6gQXdEuPv+dPvnR9nkEbHMZSo=,tag:km/Cskcx5t0rTOwU1P6B0A==,type:str]
           RedirectURIs:
-            - https://grafana.michal-kkp-gce-gh.lab.kubermatic.io/oauth/callback
-        - id: karma
-          name: Karma
-          secret: ENC[AES256_GCM,data:WmRoeAKj2dvzjcOYid3AEQ==,iv:KAFaFsZxvnZqCEZuGrQPZ72mAivOt9qRaTFIUi9VUq8=,tag:cyOTi1XhLB3flg677ZR85w==,type:str]
+            - ENC[AES256_GCM,data:tWNWmZtsxvSAfY3m/EBAc6dCUR9YlPMZwRDw2kDYBhrNGpPJPhmSSWcheCu54+GBrYeeUBbOui1TS9bMyvuUJ6AV,iv:5gWHumtRthJVnXreARhmWtc3FqkXQqviGeLP40+Yhxc=,tag:Q2Yv5hBpoMCxHPWnoq19XA==,type:str]
+        - id: ENC[AES256_GCM,data:H991Y0M=,iv:DfTtyEUhaIjzZ10xHBdPIn3eJT6ZdkVir9/fW8QZeVs=,tag:ajFNuq6IbN5AJYMjefh2VQ==,type:str]
+          name: ENC[AES256_GCM,data:ogV/Ruc=,iv:F3qfkI3FeFhkLywfaXqBB+ouJmJ6Y2UcN5BzkFjH60k=,tag:mQ2W6G6bDUgVrzi3SJQJNA==,type:str]
+          secret: ENC[AES256_GCM,data:z7EeLRw5QSApHBNwtrC77Q==,iv:dGB8BUbU8BdcNciFAr9+srNFJpIZ0+7TzQ9HVp2DOWc=,tag:SonG1pSrWCwddbtjiy32sQ==,type:str]
           RedirectURIs:
-            - https://karma.michal-kkp-gce-gh.lab.kubermatic.io/oauth/callback
+            - ENC[AES256_GCM,data:UT8L9mav7s0e4BDXOoG1HcAwtnFCtXnxysoEs+K6Lih2qiEHDzcVMTeg7hnIJJsJMdGb4Oi7dN51t32j+ZMitQ==,iv:0eqhEQwZ5LrpMGaui7FKPWSdm+oV7OD2YDiLA/nS/n8=,tag:AZSUkpu4smXT+WQFXEOBjg==,type:str]
 alertmanager:
-    host: alertmanager.michal-kkp-gce-gh.lab.kubermatic.io
+    host: ENC[AES256_GCM,data:M2YK+ilWP3NnoyOD7bkw/s/DHGu0M9EhRpXNLP8DrYBI9H655sFvcoWrkxVjFcbX,iv:MMaw7vlKJCQaGD+n4mBgnl/VmWctYT98/ojE8isREeU=,tag:F0gQjjacNZKBa+rqx8SUpg==,type:str]
 grafana:
-    user: admin
-    password: ENC[AES256_GCM,data:GQ5ejggQ3gE/vpEZjsLgyw==,iv:sE3hG2AY0REA1/9QDGIXtt+zohi1QAKOSPizffOJEnc=,tag:FjEVBCVyU91cK7Mzk4m38g==,type:str]
+    user: ENC[AES256_GCM,data:w93VSJ8=,iv:jRuQ6giR5SPQiKBhy1hANxbcRto2IZo5jA18EGS7qMg=,tag:5x8vtptn45sh0ONzSN4wxw==,type:str]
+    password: ENC[AES256_GCM,data:voTZ1D3sWQNDmCyxjRfEVA==,iv:7aZP3oXIpk8JW4qbpP82FtbNSO43WuAhZ8p3sSw/vp4=,tag:EBcmK3fbJ1uQHACNQTY0Gg==,type:str]
     provisioning:
         configuration:
-            auto_assign_org_role: Editor
-            disable_login_form: false
-            root_url: https://grafana.michal-kkp-gce-gh.lab.kubermatic.io
+            auto_assign_org_role: ENC[AES256_GCM,data:ZFM9KF7k,iv:UdoOj+63SGcRZ5xxJw/XwFHQYTYk1aVseVEQQ/Ry1zY=,tag:18DHKGhJOvUnJ9Uk2prOig==,type:str]
+            disable_login_form: ENC[AES256_GCM,data:UbCX1Hw=,iv:H80GvYYlE1oy+WZYWGZggMq45Koy2s6ii4Cu6V8nJrU=,tag:bxXf/uUED9Pk5HhQKairLg==,type:bool]
+            root_url: ENC[AES256_GCM,data:g2cPxDs5dW9OIh6syoMp/f++L/Lvky0ZML7FkO6jzT1A6Q6/PnW3xFt/bGDBE5KFbdbO,iv:lNHxl9c67Q/MWvuJHstRc0XOpupjA2rw7vt79xBoCgE=,tag:SUksZu2yxRNnjWSG7K++MA==,type:str]
         datasources:
             lokiServices:
-                - loki
+                - ENC[AES256_GCM,data:907dsA==,iv:dYtOGFhQTRB0q+szAtFrMM2Qoz/wVr93Epfa0+DZWzw=,tag:vpMD1IOAk9fYn8KxzAxT1g==,type:str]
 prometheus:
-    host: prometheus.michal-kkp-gce-gh.lab.kubermatic.io
-    storageSize: 125Gi
+    host: ENC[AES256_GCM,data:AHXST7oeIoWX0vrAUy2YALhwXejmWwlfRORYc9EVhqmi1AH7QiDCc37BtwCiYA==,iv:tBCAJzkNbV5UjYV1Gy6JBDJja4wR+w5sHLglHS9f2fg=,tag:K+8KrSoZ00dk2EA2iBgMag==,type:str]
+    storageSize: ENC[AES256_GCM,data:xeDnPz8=,iv:59GnvBoeacNZqnkoPgJO9H8eRNnGODFWq+xvmCy15S0=,tag:qYVNlcbnBs2YJvCKQdHTeg==,type:str]
     tsdb:
-        retentionTime: 7d
+        retentionTime: ENC[AES256_GCM,data:gHk=,iv:LnxN7bb5QDhqme2VfjPw7kVtprAnQqTlybT8GaMQp9s=,tag:AT4lNfQetoqhxkJkewDftA==,type:str]
     ruleFiles:
-        - /etc/prometheus/rules/general-*.yaml
-        - /etc/prometheus/rules/kubermatic-*.yaml
-        - /etc/prometheus/rules/managed-*.yaml
+        - ENC[AES256_GCM,data:dAS3IJB1kewXWU26rKyV7Ck21dbSqcnUZ8eN42eqGHCwu/iq,iv:VcidSfjrc/0gHjlOP1QGtAaM3VqRcEO5hVeq48y+Oo0=,tag:CuPlmQckKzdkP+SD5txTNw==,type:str]
+        - ENC[AES256_GCM,data:TaZNOwLRGyl5exEhTm98MQ4xjxVX7MEbo57Keu52ckyf/owJ5NfC,iv:tbNSQgqQ/NdP/MhNrz8ORaQ5GJx4cPRwqtoZNXT+2kQ=,tag:pO7maFST8KwoY8LIPUTowg==,type:str]
+        - ENC[AES256_GCM,data:FIZUsEkscaI0iRyNaiw70vI5tsupXtJS9OF+GIEqzEvVB2M4,iv:0nadkhRy9gxVmEekUHvWHDyXJ8R2ykzHSlkAgBW6DfE=,tag:LmHJc5dHeKZZzGNuVg2pFg==,type:str]
 iap:
-    oidc_issuer_url: https://michal-kkp-gce-gh.lab.kubermatic.io/dex
+    oidc_issuer_url: ENC[AES256_GCM,data:YnK18JT1xZeen7wZFOBfIq62rl0uRuNDzvrQfSJQ5IZfgLdh2JAkCFdGN+kIhBI=,iv:EHpOtrq3vCaqsCQle5uhp7QG1tljM8P57e6VvPYncOI=,tag:UBgrzf+u+ps3UOHwziu5gw==,type:str]
     deployments:
         prometheus:
-            name: prometheus
+            name: ENC[AES256_GCM,data:7lkDt9+s1+F+sw==,iv:QXGD7TSZbM/vYtxKdf6xivGWawP5n371qCSxXubqGAA=,tag:ySEphBCtO+B8oVN3CMZffA==,type:str]
             ingress:
-                host: prometheus.michal-kkp-gce-gh.lab.kubermatic.io
-            upstream_service: prometheus.monitoring.svc.cluster.local
-            upstream_port: 9090
-            client_id: prometheus
-            client_secret: ENC[AES256_GCM,data:I15YO+T5UszJcKrQt9cB0Q==,iv:xD6ezaLIt4jqSnKZjqtCfKW3RQmI7Y8YNUbuFreoGgs=,tag:kjTpvOvadCXxCdYPgqGxjw==,type:str]
-            encryption_key: ENC[AES256_GCM,data:okemouneamLWTH2ohmlupCa+gi4Nf5BESPzEIzze9AM=,iv:FiDGhfaM0RCFBYAKXoOX6U/44Be3sO20MHxop5ODxQA=,tag:uQoWeQbdTJlxe2K6QBkclQ==,type:str]
+                host: ENC[AES256_GCM,data:f/4Pzbo4xwNBGpfSranO2bke0Tek4T7jqC4nXlfAbxVcwOBh+JkrQd+8dx0Jlw==,iv:G6Fwdkk8gEm6NquzVn2sAo7ldnP37qso9HPyyEpsuxw=,tag:4MI2WJvpgi9BYkYdlhPTyg==,type:str]
+            upstream_service: ENC[AES256_GCM,data:v5Mj5k/KjNyXsGfzIT5KoRm/IxoyQ/Re2Pfinrax5qY/BRAUwaud,iv:67XamxyAogHcx5UM9kD78GMKM7yf2EinAnRoVaO0pOc=,tag:9ODvu0d4kvlgSgbeLt0xOw==,type:str]
+            upstream_port: ENC[AES256_GCM,data:r3dQJg==,iv:5P6ScDp5luhBM9VMmCRB0UI7kVUMzl+CKdN2m1zr5jY=,tag:HsFfSdifdrq/+RDS1SAA3g==,type:int]
+            client_id: ENC[AES256_GCM,data:wtB40Et7naKoDw==,iv:CLtVcRlRbIFPIRffAkEI5d3FN1htFXxaJhfUYf1kmb0=,tag:5Q7tQH1sJeVJmwV9YZ6iUg==,type:str]
+            client_secret: ENC[AES256_GCM,data:D8AeD2AjZLQeAO5QxGa1TQ==,iv:wqKjT3f1xwFpS+gBwrTO3GSBebUuZXpfIUaqpFTA2KU=,tag:ffzexa0R6CLcJjN9LeIfyw==,type:str]
+            encryption_key: ENC[AES256_GCM,data:mUtfcKo6gHzRi82D9oMZBMP506Wt/4xgKBTegxxyQUs=,iv:YsRgxnyQKOikIGfsPzHLu4CZ34LXXceacdjg06b0StQ=,tag:viPLeGZHPZCXnCjP+RCI0w==,type:str]
             config:
-                scope: groups openid email
+                scope: ENC[AES256_GCM,data:9VOJ+eLfwOa3m/W2YHSennUJDQ==,iv:1G7faaJ5eeUdaA6c1KX9t3ZBRM3AO4MCaYuLB/twx7I=,tag:XAtTY35AejgluwoVGC686A==,type:str]
                 email_domains:
-                    - kubermatic.com
-                pass_user_headers: true
+                    - ENC[AES256_GCM,data:BUY2ZyfZsap4xFMiLJo=,iv:C9FeRyR1y8NthO5EfVhe/nDYRRjegRhMvzRXtMVP6GI=,tag:HrDr/HBSdPp5V7NbZLHcxg==,type:str]
+                pass_user_headers: ENC[AES256_GCM,data:s+Y5Rg==,iv:wC8Ul/1inQnckYvpnbIwHs2fc313pP47Zud9WsFCL6I=,tag:6Ix40JMWEVK957ggolYF4A==,type:bool]
                 skip_auth_regex:
-                    - /-/health
+                    - ENC[AES256_GCM,data:z1yIoQQkreSs,iv:HGmwcF3sdlEW0dGWPOUXDSnoRcvboUoIffD2cpco1xQ=,tag:JxzqM3COpS7kNJ8T41xd9g==,type:str]
         alertmanager:
-            name: alertmanager
+            name: ENC[AES256_GCM,data:ObbP0qVFRmXmIBtF,iv:H3TGAD7OTnoTxzFNW3kUhgOyUYH/bat5NYs/KZ6yNlo=,tag:ArvfZjzDie6ExiCMtSd2Hw==,type:str]
             ingress:
-                host: alertmanager.michal-kkp-gce-gh.lab.kubermatic.io
-            upstream_service: alertmanager.monitoring.svc.cluster.local
-            upstream_port: 9093
-            client_id: alertmanager
-            client_secret: ENC[AES256_GCM,data:VlULCsYLWOCk8Opag6z9XQ==,iv:sDLIbbWWbp07Ap/DaH9m9Wt05yW5mDUX0eoPQjwha5I=,tag:qZy1uo+ptF2l4X+s1XM1cg==,type:str]
-            encryption_key: ENC[AES256_GCM,data:zx8bu1q89sL2w3Y4LuZHqb84JlxDHTC8L0pVLWu0ijo=,iv:RHTumhDb9RGZThuVNvjm9CudzbQcO55yzkzRuUjqJ7s=,tag:SnlQ393imBHlxGPgqJvAmQ==,type:str]
+                host: ENC[AES256_GCM,data:xbtE2HPBTSei04qmFw8nCTqc4hxvo+oNtVnCFBM2LOZ54IcKAeD6PkXp7bd/lgHk,iv:PkaBlabT+XYCkwkU8rvoh33JjuSFcOanhya1iGVuNNA=,tag:DsNNRNyfGagLIx6jCjOCLQ==,type:str]
+            upstream_service: ENC[AES256_GCM,data:hILoHwBKEGWTOS2QYAIYhAhnI4qb9WKN0Qmzz1YCNwYCROLmq6lmF7g=,iv:/5/m7wZnh5sFbyYDtx39K7tOGGkYpeDz4fgV6QEnbD0=,tag:R1gDAnPZO52UmlYK35emvQ==,type:str]
+            upstream_port: ENC[AES256_GCM,data:EprU8g==,iv:fzWOMR4FOMozBcl0jlk627ax0MvbACh0EKvhFcYYw5E=,tag:2wU2l5n+EJUaRiTMbP1/Dg==,type:int]
+            client_id: ENC[AES256_GCM,data:eN5ZZ4nQbK1Yf2gV,iv:SraLiXAYgwybsszKqNKHYe3z03SYAGsxuZKuohPX/Dg=,tag:vLnCkkhAoS/FA1L8p6Z0pg==,type:str]
+            client_secret: ENC[AES256_GCM,data:nlx/N3seXeNEQgsm3XNyCw==,iv:Tia8Lg1hQUabKnjY4uxWLanaIVS9u1uTj45emvUycxw=,tag:5OpZKjK3y9VKwlYYPjoXcA==,type:str]
+            encryption_key: ENC[AES256_GCM,data:cb+BCJOxNx1GT3vPeXdAnF6gZRMxPj5LQYnkHDtZkf8=,iv:aJUUnjN07kJ4x5bRTGiZW52wCBNUL7vZY9yNaBIuXhQ=,tag:Pxt/xKYiFb1sIVvDjhbIVA==,type:str]
             config:
-                scope: groups openid email
+                scope: ENC[AES256_GCM,data:QdLlX2/PfFpehH334ksPmPwdaA==,iv:a2TSL3PSW4MpBDTRIMnNEwaf33ZhifPHfV+qbaRg1ss=,tag:3sx5Hc55gD/WKpalaZoezA==,type:str]
                 email_domains:
-                    - kubermatic.com
-                pass_user_headers: true
+                    - ENC[AES256_GCM,data:YGFKOKtUGHwtyFxzURs=,iv:YA9g+F/Z5xVt4IRg6ZlrhQOVIYKuwtUMQqOC9wwXxIo=,tag:28mWE9r/NgIlzbhl6tJlNA==,type:str]
+                pass_user_headers: ENC[AES256_GCM,data:XBZCaw==,iv:1FPId20bfLmtKI9jwjdOhdO2/baiFGTh7agfY9bjte0=,tag:+zsxuEkqFCaqeBp1lKLpMA==,type:bool]
                 skip_auth_regex:
-                    - /-/health
+                    - ENC[AES256_GCM,data:84uWgIBQRRLT,iv:dYrhpx9atLkTeF3Pr0piRiYAvB6nu4BYFeWhY18B5ro=,tag:m27K3TvN+B1didSgUHuk4A==,type:str]
         grafana:
-            name: grafana
+            name: ENC[AES256_GCM,data:SjP1e36oOQ==,iv:tUXWkr9Cw0oX6P99pJTO0iDxdTgXCPNOmUBneELjYFQ=,tag:i7haZtmIgFJADy1y/vd07w==,type:str]
             ingress:
-                host: grafana.michal-kkp-gce-gh.lab.kubermatic.io
-            upstream_service: grafana.monitoring.svc.cluster.local
-            upstream_port: 3000
-            client_id: grafana
-            client_secret: ENC[AES256_GCM,data:/O2vqhjwWrVSnMmsCFL9pA==,iv:C7SLvhJnhukQgRRa7Kh2vAymHlVKQzl9tmRP9XivwSQ=,tag:BMVgqF661mlUhtCNDDLNdA==,type:str]
-            encryption_key: ENC[AES256_GCM,data:hOtRAGLU65o+5nlHcRGR52wBeMgaflAhLR1SBRQijNo=,iv:2IToQKsU6q3vOkSFl1ozp0s2f8wU0hiznBi6lFq6eWc=,tag:eYC/Oq570mWafcKpn+FjAw==,type:str]
+                host: ENC[AES256_GCM,data:OTL0bib7PEKRfN1LNqJUvVG6btesRyset+pcGGofP5uU106sCrBLFyowcw==,iv:H/QNYZqYTttU11aOYcGouWAvI7mosWDmbJso934QilY=,tag:OzBoc2/gGzhnSxEE5eVhiA==,type:str]
+            upstream_service: ENC[AES256_GCM,data:+CZtahMlP8ycnhGvOqtZ6UXoEY6jDn6h4ufYtNht+RL9Ck8l,iv:wt0cBf0E8HnDNrXwX/cajae5ANK7YkXGvziz8oDFt/Y=,tag:xMSgZxY4cJHhHvYE4SGcOw==,type:str]
+            upstream_port: ENC[AES256_GCM,data:hOoJVw==,iv:yqqfY+pBd0d323KRC59CdiUmofQ9fpi8+BwTRKPQ7Og=,tag:pKOkUziNO/rKPKqWeMbuFg==,type:int]
+            client_id: ENC[AES256_GCM,data:x9W+ZmRisw==,iv:heDItqy3haWVcCbnlJGMIlgvhyTCEdjnvwSdDTmL7EQ=,tag:LDeKSE7EaNlbDoNdAQ8Zkg==,type:str]
+            client_secret: ENC[AES256_GCM,data:IGJ3LqEYGqTu7izDajLRlw==,iv:emuiE20kR7l0+EX1FGKsfajop0qKMRFDRRxiLje3cDE=,tag:FuO6BPKPllOoCAvmHbqM+g==,type:str]
+            encryption_key: ENC[AES256_GCM,data:mrNcAqYv317DhwvtgvVPFaTmSmqtFcYKkefgyHcCIto=,iv:nUj/xn79dQoQri/oUK5tFHloIPwpil+4mPqG9JvsYpw=,tag:zkB9XmRaD6JoR5doiXOi7A==,type:str]
             config:
-                scope: groups openid email
+                scope: ENC[AES256_GCM,data:pOvC8oiMc4k1Ra/4AGWyxxFVKg==,iv:HBki4bxMY4hf5NFotknrJFPSxEyxizVppgQrktqjnbw=,tag:rqEfXQz15tC7Dwfs4TsZcg==,type:str]
                 email_domains:
-                    - kubermatic.com
-                pass_user_headers: true
+                    - ENC[AES256_GCM,data:EusRjbJmEdaEB7xI6z0=,iv:1TABIj9/SyY1GfZ1Oug7uUb5H7xqDSAzmODBMv7ZmO0=,tag:cakCixR4SNJmUh4u1QeFmA==,type:str]
+                pass_user_headers: ENC[AES256_GCM,data:dECgzQ==,iv:mPj7z0/pfLo2s6AfPDmapzo9N93nGkYd3hrH+ARdd2E=,tag:TBQ5SDnuX0xxKCsrGU+3pA==,type:bool]
                 skip_auth_regex:
-                    - /api/health
+                    - ENC[AES256_GCM,data:k3dW0ZhoVNkAFvM=,iv:5ukaIom2UtsUfMuaKIZvgGylwzcWk7OyTSUjwDYVDIE=,tag:G9Te0kAVTaqgdiVzVn6ZVA==,type:str]
         karma:
-            name: karma
+            name: ENC[AES256_GCM,data:jVULN7k=,iv:Duic9zzN/5rQSWHRJZI8h1MXqFapH2sg35f61/jWL3s=,tag:7+KjwWgE6dyXZTKJIKRBjQ==,type:str]
             ingress:
-                host: karma.michal-kkp-gce-gh.lab.kubermatic.io
-            upstream_service: karma.monitoring.svc.cluster.local
-            upstream_port: 8080
-            client_id: karma
-            client_secret: ENC[AES256_GCM,data:212JXJ1pNaSqcusDUXQz7w==,iv:NTcuFZY0X1p5TbHyqaZxg8x7lfwQ1ylUrcTud0bGJBA=,tag:MQdoYwJpwZXZ6XY1bXIjdw==,type:str]
-            encryption_key: ENC[AES256_GCM,data:9UDAkKjT+ZPlMd8EP8fDPlQoswF9KVt4LaAHJopYAfQ=,iv:vYwR8cv8vPqfMuSHc3VRTPin5jWrsnBSF1s+OhT65r0=,tag:KwK+Srh126xUJxNxSwrZ/g==,type:str]
+                host: ENC[AES256_GCM,data:QIy+5gGdC8s04X+lSGa1koiaQXfLuUnyosmvBjF8bmLrYsf2onijDfs=,iv:WLVhbF4X3XhguuwUi5amxheyK80pLSqnI9X62BJ8ECw=,tag:DfFYqOTqY79aH8xzz9sIuQ==,type:str]
+            upstream_service: ENC[AES256_GCM,data:tDrEUViM54PTYrkLfGP6CsLv2vJpeKz9qDfb2vc61oMhUg==,iv:99AYxsys+otMc2hc9pXD6Ti4QmV5yWMiVgmm+nACMio=,tag:pnPFZjPanOyjByznHdaaSw==,type:str]
+            upstream_port: ENC[AES256_GCM,data:Ymlrrw==,iv:8n6V2y7rrMCziOzRb66f4W5zdVFdgSdfxCZFaS49SW4=,tag:wbBuNXFkSDEcMYSlbts4RQ==,type:int]
+            client_id: ENC[AES256_GCM,data:zS+qkyY=,iv:/URumf4VOcy80YuNRl0QCHM1/yPwO2HI+807EJ99HPI=,tag:jUAy9kFxEcBxwzDpovHe+A==,type:str]
+            client_secret: ENC[AES256_GCM,data:FqWEP7GRmB1TzS2WvtEfVw==,iv:AZrv7Auva/vpDHiYe9Iq8uy+aiWrfoyTtwQuqgdtouQ=,tag:FPKD1JiKvGe/2YZwGQjMTA==,type:str]
+            encryption_key: ENC[AES256_GCM,data:3Vopz04qoUVaB40Zv9LOv6iDhq6WLfYFLkM+E5OYv7A=,iv:E2oXUK2Oy4cCzf01RJCtUJMY+2zAosjbaoGwsD+yRe8=,tag:uSE02XSC4P2rs149o9Cbgg==,type:str]
             config:
-                scope: groups openid email
+                scope: ENC[AES256_GCM,data:G4RcTT+yCUlzb1BmStGDFF0ZvQ==,iv:eMzPHy/uLk5vNEmm7kb0Zvsox7Vfkz25Cwid50zpo5k=,tag:91C1j2uwULvcalJbXiBKCg==,type:str]
                 email_domains:
-                    - kubermatic.com
-                pass_user_headers: true
+                    - ENC[AES256_GCM,data:g4bfvWyzY0gUtJpSaHc=,iv:5NMV7kIkxEmeJ2ExiQovgCCdwognQ8Bz9kjsBjQlSi0=,tag:pwIJa4t8lcyryNMqGoE0AA==,type:str]
+                pass_user_headers: ENC[AES256_GCM,data:Ro1vWg==,iv:/UCBDr08vRrpiixaKdg8xCw62IIjHHYPMHKvWrsUM3I=,tag:MLinap4Ys+w+uOZiALpLgw==,type:bool]
 telemetry:
-    # uuid is the unique identifier of the client where the agent is running.
-    # This field is required and will print an error message when that entry is missing.
-    uuid: a767f1f3-b663-4470-9b7d-a1fa90d469cd
+    #ENC[AES256_GCM,data:hOEsbRzulrdNoJ0XAZMI07y5RxYj1hO9yu0wZsY24y7GRfDtfyq742jPPArHbIoOFJI8vSPMI/d0mcOm+Zwp4tiuX8KqPS0L,iv:bPsmB1r3DtcXbLBrIgJMTnCVR4aaj1kGVDLU56UYyJE=,tag:wcD1tUEZVwTodhPAUZbGpg==,type:comment]
+    #ENC[AES256_GCM,data:G7kMbVImHNqkH+CIACdTqr5k+HIWs3o2bf1AVWLGhYLjzYwas0FMOutFW+jggTw8xmGyQLMYnckq09o+1zUxG+1IG3ahvLnFTpq0n5dRJC1rjsk=,iv:56VoFGWpypUiSaJwEIzdxm0U2Kg5pVQds1/WibVZ0aA=,tag:mKP4yIhl0yb1j+bhtVd3qQ==,type:comment]
+    uuid: ENC[AES256_GCM,data:CigcceY9oqWfiQ2l/C2OsVH5yDaypF/Lbk73MkCat9YGSGlh,iv:grFP9t00TQSdNasc51CgSttqjLc/FZOnP+aF2b35eIw=,tag:t6Fg3glMpr/CMDF/5a1Faw==,type:str]
 sops:
     kms: []
     gcp_kms: []
@@ -147,14 +147,14 @@ sops:
         - recipient: age1lf2ddxlw3tx2598heceqdgnkn9zdnfeuxj57gpmqzaj67wpndg9qqle3d8
           enc: |
             -----BEGIN AGE ENCRYPTED FILE-----
-            YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSBBempoU0ZWVFNUczNkZ2RY
-            Zm56RWxmRG8xbTQvei9FaE9LdWtUZVpOVUQwCmNKbGd3RU92cDZ3emlMcGxHVE5a
-            dE1QRWc3RWRNZVlyNUJMakFldjRTa0kKLS0tIGxBZ0pXZHk3cFZUV3psdjZqanlY
-            M0E5OHJnTy8rNEZsS1F6WmNhRmdlTkEKvarmsiJMobeedz2SQgNB6l3+U+Lapvf1
-            vnWX2o8uCOwvsgB0nhE7XmQdHfW5Ma2EzyeCkhVXo3tLKDMR7yOiTw==
+            YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSBjdEtwY0FxdnZKQ2lReEZh
+            MUxaMlQzWXdNbXk0Qk5mSk0ybGh0bjRnU0I0CllXak5DV0tyZGZqdmxkUE04MWZB
+            UXhKcEdmejVZcEVObE5wbnZvVUlvRzgKLS0tIEtDZjhSWS9zTXJ6eWh4ZTV2OFJI
+            MDhpNXhRZTRqMkUvT2NyVlpCdFoydHcKFxBW+xqds5ITqnN1tYPOxSH9wW7dxxhT
+            yMSPzerxFNvnBueEuyrZ/M8y2XM2M2oajWcWZkHMvmohfBclGKkM4g==
             -----END AGE ENCRYPTED FILE-----
-    lastmodified: "2022-02-23T11:42:13Z"
-    mac: ENC[AES256_GCM,data:pXlW5RAzMVX+3LorKnkOWjEq7X/52+zMTHTXQCHHjv1AepIdJMNtUlRcq3t1WEaWuTJwBERhuOVjzhJqSClWwkKLlyM8pcSpitFgK6xoha4VIv9HarZG/ccmejNeilaXQaa5vPjIDbiYu/qMWycgzKm8NGcxt63qET59YT7RyZ0=,iv:iSDjkoSwXdXDV7/fIvv4/VcDisAKd+wT6U3GyS+0RjQ=,tag:P948brG9Vw59d92T3ZE9Ag==,type:str]
+    lastmodified: "2022-02-25T13:15:11Z"
+    mac: ENC[AES256_GCM,data:rCIx2j+oeQGK1NtaDfzLEcoyrxPcXnPOBZ4/KpBQPOv/zX/5y1O5i6uALm/WPYn/z/50bU7Xl7y/dJvgRh+kDHJ4S7gMVVMRpKo1lZPGjnSDtUobxMIsieqKEEaXFKwHLohu4PVM2ZMIJOyUPwAYrt1Bg4MyYHLy3leS9oa38Co=,iv:Z3lZ2a+0+fDevzvxRicBiPvqfpwDPfB1K7KqwW2mRFA=,tag:s9AfH7wLr0H4ay5Kl+I46w==,type:str]
     pgp: []
-    encrypted_regex: (hash|secret|password|encryption_key|accessKey)
+    unencrypted_suffix: _unencrypted
     version: 3.7.1
